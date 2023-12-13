@@ -1,0 +1,208 @@
+.Home{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-family: 'Hind', sans-serif;
+    color: azure;
+    animation: inicio 1s ease;
+    background: linear-gradient(45deg, #006400,#000000);
+}   
+
+.logoApp{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 40%;
+    margin: 0 0 50px 80px;
+}
+
+.inicioHome{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.apresentacaoHome{
+    width: 50%;
+}
+
+.apresentacaoHome h4{
+    background: #008000;
+    text-align: end;
+    color: azure;
+    width: 230px;
+    padding: 5px;
+    padding-right: 10px;
+    height: 40px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.apresentacaoHome h2{
+    text-transform: uppercase;
+    margin: 20px 0 30px 85px;
+    font-weight: bold;
+}
+
+.apresentacaoHome p{
+    font-size: 20px;
+    margin: 0 0 30px 85px;
+    font-weight: 400;
+}
+
+.contatoHome{
+    display: flex;
+    flex-direction: column;
+}
+
+.contatoHome input[type='button']{
+    margin: 10px 0 10px 85px;
+    border-radius: 0;
+    border: none;
+    background-color: #008000;
+    color: azure;
+    font-weight: bold;
+    height: 50px;
+    width: 225px;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.imagensHome{
+    width: 50%;
+    animation: imagem 2s ease;
+}
+
+.imagensHome img{
+    position: absolute;
+    width: 700px;
+    right: 100px;
+    bottom: 0;
+}
+
+.transition {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out; 
+  }
+  
+  .hide {
+    opacity: 0;
+  }
+
+  
+@media (min-width: 1700px){
+    .imagensHome img{
+        width: 725px;
+        right: 100px;
+    }
+}
+
+@media (max-width: 1700px){
+    .logoApp{
+        margin-top: 60px;
+        margin-bottom: 70px;
+    }
+
+    .imagensHome img{
+        width: 650px;
+        right: 50px;
+    }
+
+    .apresentacaoHome{
+        width: 40%;
+        height: 900px;
+        z-index: 1;
+        right: 0;
+    }
+}
+
+@media (max-width: 1130px){
+
+    .logoApp{
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+
+    .imagensHome img{
+        width: 550px;
+        right: 30px;
+    }
+}
+
+@media (max-width: 950px){
+    .Home{
+        height: auto;
+        background: linear-gradient(#006400,#000000);
+    }
+
+    .logoApp{
+        margin-top: 40px;
+        margin-bottom: 70px;
+    }
+
+    .imagensHome{
+        height: 1050px;
+    }
+
+    .imagensHome img{
+        width: 550px;
+        right: 150px;
+        top: 719px;
+    }
+
+    .apresentacaoHome{
+        width: 100%;
+        z-index: 1;
+        right: 0;
+    }
+}
+
+@media (max-width: 800px){
+    .imagensHome img{
+        width: 550px;
+        right: 85px;
+        top: 719px;
+    }
+}
+
+@media (max-width: 700px){
+    .imagensHome img{
+        width: 520px;
+        right: 55px;
+        top: 747px;
+    }
+}
+
+@media (max-width: 600px){
+    .imagensHome{
+        height: 995px;
+    }
+
+    .imagensHome img{
+        width: 450px;
+        right: 45px;
+        top: 757px;
+    }
+}
+
+@keyframes inicio{
+    from{
+        padding-top: 500px;
+    }
+    to{
+        padding-top: 0;
+    }
+}
+
+@keyframes imagem{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;;
+    }
+}

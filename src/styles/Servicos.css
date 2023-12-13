@@ -1,0 +1,53 @@
+.Servicos{
+    text-align: center;
+    height: auto;
+    width: 100%;
+    background: linear-gradient(45deg, #006400,#000000);
+    font-family: 'Hind', sans-serif;
+}
+
+.services-icon{
+    margin-top: 60px;
+    font-size: 50px;
+    color: azure;
+}
+
+.Servicos h2{
+    font-size: 50px;
+    color: azure;
+    margin-bottom: 50px;
+}
+
+.todos-servicos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+
+}
+
+.todos-servicos h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.3);
+    color: azure;
+    text-transform: uppercase;
+    width: 28%;
+    height: 125px;
+    border: 1px solid azure;
+    border-radius: 10px;
+    font-size: 25px;
+    margin: 30px;
+}
+
+@media (max-width: 900px){
+    .todos-servicos{
+        flex-wrap: wrap;
+    }
+
+    .todos-servicos h4{
+        width: 65%;
+    }
+}
